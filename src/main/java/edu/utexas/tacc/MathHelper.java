@@ -76,8 +76,7 @@ public class MathHelper implements Helper<Object> {
     }
   }
 
-  @Override
-  public CharSequence apply(final Object value, Options options) throws IOException, IllegalArgumentException {
+  public Object apply(final Object value, Options options) throws IOException, IllegalArgumentException {
     if (options.params.length >= 2) {
       Operator op = Operator.fromSymbol(options.param(0).toString());
       if (op == null) {
